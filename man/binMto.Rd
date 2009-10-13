@@ -34,16 +34,16 @@ binMto(x, ...)
   \item{conf.level}{ confidence level }
   \item{alternative}{ character string, one of "two.sided", "less", "greater" }
   \item{method}{ character string specifying the method of CI construction to used, one of:
-    \item{"Add4"}{adding-4-method (Agresti and Caffo, 2000), conservative, recommended for small sample sizes}
-    \item{"Add2"}{adding-2-method (Brown and Li, 2005),less conservative, recommended for one-sided limits}
-    \item{"NHS"}{Newcombes Hybrid Score method (Newcombe, 1998)}
-    \item{"Wald"}{Wald method, not recommended, only for large sample sizes and not too extreme proportions}
+    \kbd{"Add4"}: adding-4-method (Agresti and Caffo, 2000), conservative, recommended for small sample sizes,
+    \kbd{"Add2"}: adding-2-method (Brown and Li, 2005),less conservative, recommended for one-sided limits,
+    \kbd{"NHS"}: Newcombes Hybrid Score method (Newcombe, 1998),
+    \kbd{"Wald"}: Wald method, not recommended, only for large sample sizes and not too extreme proportions.
   }
   \item{adj}{ character string, specifying the adjustment for multiplicity, one of:
-    \item{"Dunnett"}{Recommended, using quantiles of the multivariate normal distribution
- adjusting for multiplicity and correlation between comparisons depending on sample size and estimated proportion (Piegorsch, 1991)}
-    \item{"Bonf"}{Simple Bonferroni-adjustment, conseravtive for large number of comparisons}
-    \item{"Unadj"}{Unadjusted interval, i.e. each with local confidence level = conf.level}
+    \kbd{"Dunnett"}: Recommended, using quantiles of the multivariate normal distribution
+ adjusting for multiplicity and correlation between comparisons depending on sample size and estimated proportion (Piegorsch, 1991),
+    \kbd{"Bonf"}: Simple Bonferroni-adjustment, conseravtive for large number of comparisons,
+    \kbd{"Unadj"}: Unadjusted interval, i.e. each with local confidence level = conf.level
   }
   \item{\dots}{arguments to be passed to the methods \code{binMto.formula} and \code{binMto.default}}
 }
@@ -53,22 +53,14 @@ binMto(x, ...)
 Thus they can not be recommended if sample size is combined with extreme 
 proportions of success (close to 0 or 1). Among the available methods Add-4
 is most appropriate for small sample sizes, if conservative performance is acceptable.
-Requires the package mvtnorm.  
+
 }
 \value{ A list containing:
   \item{conf.int }{a matrix containg estimates, lower and upper confidence limits}
   and further values specified in the function call, apply str() to the output for details
 }
 \references{ 
-For the calculation of quantiles for many-to-one comparisons:
-
-\bold{Piegorsch, W.W. (1991):} Multiple comparisons for analyzing dichotomous response. Biometrics 47 (1), 45-52.
-
-For the used interval methods (two-sample comparisons), see:
-
-\bold{Agresti, A. and Caffo, B. (2000):} Simple and effective confidence intervals for proportions and differences of proportions result from adding two successes and two failures. American Statistician 54 (4), 280-288. 
-\bold{Brown, L. and Li, X. (2005):} Confidence intervals for two sample binomial distribution. Journal of Statistical Planning and Inference 130, 359-375.
-\bold{Newcombe, R.G. (1998):} Interval estimation for the difference between independent proportions: comparison of eleven methods. Statistics in Medicine 17, 873-890.
+\emph{Schaarschmidt, F., Biesheuvel, E., Hothorn, L.A. (2009)} Asymptotic simultaneous confidence intervals for many-to-one comparisons of binary proportions in randomized clinical trials, Journal of Biopharmaceutical Statistics 19(2):292-310.
  }
 
 \author{ Frank Schaarschmidt }

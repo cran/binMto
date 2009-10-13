@@ -11,7 +11,7 @@ Asymptotic simultaneous confidence intervals for comparison of many treatments w
 for the difference of proportions, allows for Dunnett-like-adjustment, Bonferroni or unadjusted intervals.
 }
 \details{
-
+A formal definition and simulation results of the simultaneous coverage probability under various conditions can be found in Schaarschmidt et al. (2009).
 }
 \author{
 Frank Schaarschmidt
@@ -20,10 +20,7 @@ Maintainer:  <schaarschmidt@biostat.uni-hannover.de>
 
 }
 \references{
-\bold{Piegorsch, W.W. (1991):} Multiple comparisons for analyzing dichotomous response. Biometrics 47 (1), 45-52.
-\bold{Agresti, A. and Caffo, B. (2000):} Simple and effective confidence intervals for proportions and differences of proportions result from adding two successes and two failures. American Statistician 54 (4), 280-288. 
-\bold{Brown, L. and Li, X. (2005):} Confidence intervals for two sample binomial distribution. Journal of Statistical Planning and Inference 130, 359-375.
-\bold{Newcombe, R.G. (1998):} Interval estimation for the difference between independent proportions: comparison of eleven methods. Statistics in Medicine 17, 873-890.
+\emph{Schaarschmidt, F., Biesheuvel, E., Hothorn, L.A. (2009)} Asymptotic simultaneous confidence intervals for many-to-one comparisons of binary proportions in randomized clinical trials, Journal of Biopharmaceutical Statistics 19(2):292-310.
 }
 \keyword{ package }
 

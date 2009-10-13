@@ -1,7 +1,7 @@
 \name{apprPower}
 \alias{apprPower}
 
-\title{ Approximate any-pair power for many-to-one comparison of binomial proportions }
+\title{ Approximate power (any rejection!) for many-to-one comparison of binomial proportions }
 
 \description{
   Approximative power to reject the hypothesis that all of the k differences 

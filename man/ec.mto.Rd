@@ -18,19 +18,16 @@ ec.mto(n, x, alternative = "less")
   \item{x}{ vector of integers specifying the number of successes in each group, where the first value is taken as control  }
   \item{alternative}{ a character string, one of "two.sided", "greater", "less" }
 }
-\details{
-  
-}
+
 
 \value{ a single numeric value, the p.value of the maximum test  
 }
 \references{
-\bold{ Koch, HF and Hothorn, LA (1999):} Exact unconditional distributions for dichotomous data in many-to-one comparisons.
-  JSPI 82, 83-99 (section 2.1) }
+\emph{Koch, H.F. and Hothorn, L.A. (1999):} Exact unconditional distributions for dichotomous data in many-to-one comparisons.
+  Journal of Statistical Planning and Inference 82, 83-99 (section 2.1) }
 
 \author{ Frank Schaarschmidt }
-\note{ 
-}
+
 \examples{
 
 # Example from Koch and Hothorn (1999), Table 5:

@@ -28,7 +28,12 @@ Mtoquant(nc, nx, pc, px, conf.level = 0.95, adj = "Dunnett", alternative = "two.
 \value{
 The appropriate quantile for CI construction in binMto.
 }
-\references{ Piegorsch WW (1991): Multiple comparisons for analyzing dichotomous response. Biometrics 47, 45-57. }
+\references{
+\emph{Schaarschmidt, F., Biesheuvel, E., Hothorn, L.A. (2009)} Asymptotic simultaneous confidence intervals for many-to-one comparisons of binary proportions in randomized clinical trials, Journal of Biopharmaceutical Statistics 19(2):292-310.
+
+\emph{Piegorsch, W.W. (1991):} Multiple comparisons for analyzing dichotomous response. Biometrics 47, 45-57.
+
+}
 
 \author{ Frank Schaarschmidt }
 

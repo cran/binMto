@@ -28,7 +28,7 @@
 
 \references{
 The example below, see:
-Bretz F and Hothorn LA (2002): Detecting dose-response using contrasts: Asymptotic power and sample size determination for binomial data. Statistics in Medicine 21, 3325-3335.
+\emph{Bretz, F. and Hothorn, L.A. (2002):} Detecting dose-response using contrasts: Asymptotic power and sample size determination for binomial data. Statistics in Medicine 21, 3325-3335.
 }
 
 \examples{

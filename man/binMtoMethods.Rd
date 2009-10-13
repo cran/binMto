@@ -36,15 +36,18 @@ Wald(nx, ny, X, Y, quantile, alternative)
 
 }
 \references{
- Agresti, A. and Caffo, B. (2000): Simple and effective confidence intervals for proportions and differences of proportions result from adding two successes and two failures. American Statistician 54 (4), 280-288. 
 
- Brown, L. and Li, X. (2005): Confidence intervals for two sample binomial distribution. Journal of Statistical Planning and Inference 130, 359-375.
+\emph{Schaarschmidt, F., Biesheuvel, E., Hothorn, L.A. (2009):} Asymptotic simultaneous confidence intervals for many-to-one comparisons of binary proportions in randomized clinical trials, Journal of Biopharmaceutical Statistics 19(2):292-310.
 
- Newcombe, R.G. (1998): Interval estimation for the difference between independent proportions: comparison of eleven methods. Statistics in Medicine 17, 873-890.
+\emph{Agresti, A. and Caffo, B. (2000):} Simple and effective confidence intervals for proportions and differences of proportions result from adding two successes and two failures. American Statistician 54 (4), 280-288. 
+
+\emph{Brown, L. and Li, X. (2005):} Confidence intervals for two sample binomial distribution. Journal of Statistical Planning and Inference 130, 359-375.
+
+\emph{Newcombe, R.G. (1998):} Interval estimation for the difference between independent proportions: comparison of eleven methods. Statistics in Medicine 17, 873-890.
 
  }
 \author{ Frank Schaarschmidt }
  
-\seealso{ \code{prop.test}, \code{chisq.test} }
+\seealso{ \code{pairwise.prop.test} }
 
 \keyword{ htest }

@@ -1,7 +1,7 @@
 \name{nbinMto}
 \alias{nbinMto}
 
-\title{ Sample size iteration to achieve a pre-specified power  }
+\title{ Sample size iteration for many-to-one comparisons of binomials }
 
 \description{This function iteratively increases sample size until a pre-specified any-pair power of a test is achieved. 
 Here, only power to reject the null hypothesis of no difference between treatment and control ( H0[i]: p[i] - p[0]=0 ) is covered .

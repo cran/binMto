@@ -1,7 +1,7 @@
 \name{print.binMto}
 \alias{print.binMto}
 
-\title{ print function for objects of class "binMto"}
+\title{ Print function for objects of class "binMto"}
 \description{
  A print functions for objects produced by calling \code{binMto}.
 }
