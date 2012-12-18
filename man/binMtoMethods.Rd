@@ -26,8 +26,7 @@ Wald(nx, ny, X, Y, quantile, alternative)
   \item{alternative}{ a character string, one of "two.sided", "less", "greater" }
 }
 
-\details{
-  }
+
 \value{
 
   A list containing

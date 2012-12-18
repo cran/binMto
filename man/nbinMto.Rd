@@ -67,10 +67,6 @@ nbinMto(Ntotal = 2000, pH1=c(0.45, 0.45, 0.5, 0.5, 0.6),
  ratio = 1, alpha = 0.05, power = 0.8, 
  alternative = "greater", method = "Wald", trace = FALSE)
 
-nbinMto(Ntotal = 2000, pH1=c(0.45, 0.45, 0.5, 0.5, 0.6),
- ratio = 2, alpha = 0.05, power = 0.8, 
- alternative = "greater", method = "Wald", trace = FALSE)
-
 # Compare with the results in Bretz and Hothorn (2002),
 # Table III. Note, that in the present function unpooled
 # variance estimators are used, while Bretz and Hothorn use 

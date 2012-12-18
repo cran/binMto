@@ -36,7 +36,6 @@ The example below, see:
 # 1)Simultaneous CI for Dunnett contrasts
 # for the example in Table 1 of 
 
-binMto(x=c(9,19,21,21,24), n=c(20,43,42,42,41), names = c("Placebo",0.125,0.5,0.75,1) )
 plot(binMto(x=c(9,19,21,21,24), n=c(20,43,42,42,41), names = c("Placebo",0.125,0.5,0.75,1) ))
 
 }

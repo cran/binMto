@@ -38,7 +38,7 @@ Take care that n and pH1 shold have the same length (k+1 groups), but H0diff sho
 \value{
   A matrix containing the hypotheses to be tested, the parameters assumed under the alternative, the any-pair-power and the 
 coverage probability for the setting under the alternative in the columns}
-\references{  }
+
 \author{ Frank Schaarschmidt }
 
 \examples{
@@ -53,17 +53,12 @@ coverage probability for the setting under the alternative in the columns}
 ni<-matrix(rep(seq(20,100,10), times=4), ncol=4)
 ni
 
-#
-# two-sided testing:
 
-simPower(H0diff=c(0.1,0.1,0.1), pH1=c(0.2,0.3,0.4,0.5), n=ni, n.sim=1000, alternative="two.sided")
 
-# one-sided:
+# one-sided, alternative greater:
 
 simPower(H0diff=c(0.1,0.1,0.1), pH1=c(0.2,0.3,0.4,0.5), n=ni, n.sim=1000, alternative="greater")
 
-# this will not make sense:
-#  simPower(H0diff=c(0.1,0.1,0.1), pH1=c(0.2,0.3,0.4,0.5), n=ni, n.sim=1000, alternative="less")
 
 }
 \keyword{ htest }

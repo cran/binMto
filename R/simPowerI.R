@@ -83,7 +83,7 @@ CImatup<-matrix(ncol=k, nrow=n.sim)
 
 for(i in 1:n.sim)
  {
- data<-rbinom(n=k+1, size=n, p=pH1)
+ data<-rbinom(n=k+1, size=n, prob=pH1)
 
  temp<-CIfun(n=n, x=data, quant=quant, method=method)
  

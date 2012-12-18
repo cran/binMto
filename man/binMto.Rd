@@ -14,8 +14,6 @@ normal distributrion (Dunnett) standard normal quantiles (Bonferroni or unadjust
 }
 \usage{
 
-binMto(x, ...)
-
 \method{binMto}{default}(x, n, names = NULL,
  base = 1, conf.level = 0.95, alternative = "two.sided",
  method = "Add4", adj = "Dunnett", ...)
@@ -78,10 +76,6 @@ binMto(x=c(9,19,21,21,24),
  n=c(20,43,42,42,41),
  names = c("Placebo", 0.125, 0.5, 0.75, 1) )
 
-plot(binMto(x=c(9,19,21,21,24),
- n=c(20,43,42,42,41),
- names = c("Placebo",0.125,0.5,0.75,1) ))
-
 #########################################################
 
 # 2) Berth-Jones, J., Todd, G., Hutchinson, P.E.,
@@ -105,28 +99,6 @@ plot(binMto(x=c(9,19,21,21,24),
 binMto(x=c(2,6,4,13),
  n=c(34,35,36,34),
  names = c("Placebo","50mg","75mg","150mg") )
-
-plot(binMto(x=c(2,6,4,13),
- n=c(34,35,36,34),
- names = c("Placebo","50mg","75mg","150mg") ))
-
-# One-sided Add-4 95-percent confidence intervals
-# (for higher values in treatments than in control):
-
-binMto(x=c(2,6,4,13),
- n=c(34,35,36,34),
- names = c("Placebo","50mg","75mg","150mg"),
- alternative="greater" )
-
-
-
-# Comparison with a 2x4 table Chisquare-Test: 
-
-x<-c(2,6,4,13)
-n<-c(34,35,36,34)
-tab<-rbind(x, n-x)
-
-chisq.test(tab, correct=TRUE)
 
 
 }
