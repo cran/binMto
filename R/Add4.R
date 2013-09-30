@@ -5,8 +5,6 @@ function(nx, ny, X, Y, quantile, alternative)
 pxI <- (X+1)/(nx+2)
 pyI <- (Y+1)/(ny+2)
 
-# # # for the def of ni see the Agresti Caffo (2000) Am Stat 54, 280 again
-
 nxI <- nx+2
 nyI <- ny+2
 estI <- pxI - pyI

@@ -2,7 +2,6 @@
 function(n, pH1, alpha=0.05, alternative="greater", method="Add4")
 {
 
-require(mvtnorm)
 
 nc <- n[1]
 nx <- n[-1]

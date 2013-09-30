@@ -5,7 +5,7 @@ nbinMto, apprPower,
 ec.mto
 )
 
-import(graphics, mvtnorm)
+importFrom(mvtnorm, qmvnorm, pmvnorm)
 
 S3method(plot, binMto)
 S3method(print, binMto)

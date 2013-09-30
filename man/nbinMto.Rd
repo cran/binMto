@@ -10,7 +10,8 @@ groups can be specified.
 }
 
  \usage{
-nbinMto(Ntotal = 500, pH1, ratio = 1, alpha = 0.05, power = 0.8, alternative = "two.sided", method = "Add4", trace = FALSE)
+nbinMto(Ntotal = 500, pH1, ratio = 1, alpha = 0.05, power = 0.8,
+ alternative = "two.sided", method = "Add4", trace = FALSE)
 }
 \arguments{
   \item{Ntotal}{ a single number or vector with two integers specifying the maximum or the range of total sample size allowed in iteration }
@@ -63,7 +64,7 @@ The performance of a corresponding test using the add-4 or add-2 adjustment is n
 
 # a) use a balanced design: ratio=1
 
-nbinMto(Ntotal = 2000, pH1=c(0.45, 0.45, 0.5, 0.5, 0.6),
+nbinMto(Ntotal = c(500, 1500), pH1=c(0.45, 0.45, 0.5, 0.5, 0.6),
  ratio = 1, alpha = 0.05, power = 0.8, 
  alternative = "greater", method = "Wald", trace = FALSE)
 
@@ -71,6 +72,8 @@ nbinMto(Ntotal = 2000, pH1=c(0.45, 0.45, 0.5, 0.5, 0.6),
 # Table III. Note, that in the present function unpooled
 # variance estimators are used, while Bretz and Hothorn use 
 # a pooled variance estimator.
+# Note further, that there is some Monte Carlo Error in computing
+# multivariate normal probabilities.
 
 }
 \keyword{ htest }

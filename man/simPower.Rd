@@ -9,7 +9,8 @@ binmto are used for a decision on hypothesis, for a given setting of sample size
 parameters (pH1), and parameters to test against (H0diff), and confidence interval method.
 }
 \usage{
-simPower(H0diff, pH1, n, n.sim = 1000, conf.level = 0.95, alternative = "two.sided", method = "Add4", adj = "Dunnett")
+simPower(H0diff, pH1, n, n.sim = 1000, conf.level = 0.95,
+ alternative = "two.sided", method = "Add4", adj = "Dunnett")
 }
 
 \arguments{
@@ -44,20 +45,22 @@ coverage probability for the setting under the alternative in the columns}
 \examples{
 
 # three groups are to be tested vs. a control
-# test the null-hypothesis that all treatments have the same proportion of success: H0diff=c(0,0,0)
-# assume that the proportion of success is 0.2 in the control group, and 0.3,0.4,0.5 in the three treatment groups
-# simulate power for balanced designs with 20, 30,...,100 observations per group
+# H0: all treatments have the same proportion of success: H0diff=c(0,0,0)
+# proportion of success in the control: 0.2 
+# proportions of success in the treatment groups: 0.3,0.4,0.5
+# simulate power for balanced designs with 20, 30,...,100 observations
+# per group
 
-# create a matrix for the sample sizes to be used for simulation and have a look at it:
+# create a matrix for the sample sizes to be used for simulation:
 
 ni<-matrix(rep(seq(20,100,10), times=4), ncol=4)
 ni
 
 
-
 # one-sided, alternative greater:
 
-simPower(H0diff=c(0.1,0.1,0.1), pH1=c(0.2,0.3,0.4,0.5), n=ni, n.sim=1000, alternative="greater")
+simPower(H0diff=c(0.1,0.1,0.1), pH1=c(0.2,0.3,0.4,0.5), 
+ n=ni, n.sim=1000, alternative="greater")
 
 
 }

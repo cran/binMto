@@ -3,8 +3,6 @@ function(Ntotal=500, pH1 , ratio=1, alpha=0.05, power=0.8, alternative="two.side
 trace=FALSE)
 {
 
-require(mvtnorm)
-
 pc <- pH1[1]
 px <- pH1[-1]
 

@@ -2,8 +2,6 @@
 function(nc, nx, pc, px, conf.level=0.95, adj="Dunnett", alternative="two.sided")
 {
 
-require(mvtnorm)
-
 # # calculate the correlation matrix R:
 # # see Piegorsch, Biometrics (1991) 47(1), 45-52:
 # # (3.3)
