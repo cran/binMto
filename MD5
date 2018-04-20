@@ -1,5 +1,5 @@
-d11bd592c848197f1819cf46ca3957de *DESCRIPTION
-d5c426efcaf5c60e03160f5e68488b1a *NAMESPACE
+8f8566bbfd458e492d6e327a17faf92e *DESCRIPTION
+a1046c96d59bb36e289216be63339c7e *NAMESPACE
 06eaedce194f4ad8c268040ffa73c492 *R/Add2.R
 edd5301cba5c577956f08ad301a56925 *R/Add4.R
 c1f68a27053560db2e39edbcb52fa1f7 *R/Mtoquant.R
@@ -19,8 +19,8 @@ be98684625dc66568c3669bb91b89e35 *man/apprPower.rd
 76cd7ed293588b7a35efbf4ef677affb *man/binMto.Rd
 fa8144fa5fe74c8dcfd7d27edfb0df04 *man/binMto.package.Rd
 266032f14a08c4c8cab9d65525abd4ff *man/binMtoMethods.Rd
-5ef05508b1309f319113da597da059d9 *man/ec.mto.Rd
-85d947c00a689ad5e399571e39d05773 *man/nbinMto.Rd
+89048b9a0f5569f0a3e221a09eb4ea0e *man/ec.mto.Rd
+cf1cd729b905a55430906f7fecfc8359 *man/nbinMto.Rd
 f41bd8e6df234f2cb868eefa0fc126e0 *man/plot.binMto.Rd
 60595450ea05988202d82fab1a5e18fc *man/print.binMto.Rd
 91173e91e5be6e06b4a12cf87fd9cc43 *man/simPower.Rd

@@ -64,7 +64,7 @@ The performance of a corresponding test using the add-4 or add-2 adjustment is n
 
 # a) use a balanced design: ratio=1
 
-nbinMto(Ntotal = c(500, 1500), pH1=c(0.45, 0.45, 0.5, 0.5, 0.6),
+nbinMto(Ntotal = c(800, 1200), pH1=c(0.45, 0.45, 0.5, 0.5, 0.6),
  ratio = 1, alpha = 0.05, power = 0.8, 
  alternative = "greater", method = "Wald", trace = FALSE)
 

@@ -1,4 +1,4 @@
-export(binMto, binMto.default, binMto.formula,
+export(binMto, binMto.formula, binMto.default,
 Add2, Add4, NHS, Wald,
 simPower, simPowerI,
 nbinMto, apprPower,
@@ -7,5 +7,10 @@ ec.mto
 
 importFrom(mvtnorm, qmvnorm, pmvnorm)
 
+importFrom("graphics", "abline", "axis", "box", "par", "plot.new", "points", "segments", "strwidth")
+importFrom("stats", "model.frame", "qnorm", "rbinom")
+
+S3method(binMto, default)
+S3method(binMto, formula)
 S3method(plot, binMto)
 S3method(print, binMto)

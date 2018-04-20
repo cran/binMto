@@ -37,8 +37,6 @@ ec.mto(n, x, alternative = "less")
 ec.mto(n=c(40,20,20,20), x=c(4,1,6,8),
  alternative= "two.sided")
 
-ec.mto(n=c(40,20,20,20), x=c(4,1,6,8),
- alternative= "less")
 
 ec.mto(n=c(40,20,20,20), x=c(4,1,6,8),
  alternative= "greater")
